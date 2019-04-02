@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Swiper Playground</title>
+    <link rel="stylesheet" href="../dist/css/swiper.min.css">
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="grid">
+      <a href="010-default.html"></a>
+      <a href="020-navigation.html"></a>
+      <a href="040-pagination-dynamic.html"></a>
+      <a href="050-pagination-progress.html"></a>
+      <a href="060-pagination-fraction.html">ОНО</a>
+      <a href="070-pagination-custom.html"></a>
+      <a href="080-scrollbar.html"></a>
+      <a href="090-vertical.html"></a>
+      <a href="100-space-between.html"></a>
+      <a href="110-slides-per-view.html"></a>
+      <a href="120-slides-per-view-auto.html"></a>
+      <a href="130-centered.html"></a>
+      <a href="140-centered-auto.html"></a>
+      <a href="150-freemode.html"></a>
+      <a href="160-scroll-container.html"></a>
+      <a href="170-slides-per-column.html"></a>
+      <a href="180-nested.html"></a>
+      <a href="190-grab-cursor.html"></a>
+      <a href="200-infinite-loop.html"></a>
+      <a href="210-infinite-loop-with-slides-per-group.html"></a>
+      <a href="220-effect-fade.html"></a>
+      <a href="230-effect-cube.html"></a>
+      <a href="240-effect-coverflow.html"></a>
+      <a href="250-effect-flip.html"></a>
+      <a href="260-keyboard-control.html"></a>
+      <a href="270-mousewheel-control.html"></a>
+      <a href="280-autoplay.html"></a>
+      <a href="290-dynamic-slides.html"></a>
+      <a href="300-thumbs-gallery.html">отсюда</a>
+      
+      
+      
+      <a href="310-thumbs-gallery-loop.html"></a>
+      <a href="320-multiple-swipers.html"></a>
+      <a href="330-hash-navigation.html"></a>
+      <a href="340-history.html"></a>
+      <a href="350-rtl.html"></a>
+      <a href="360-parallax.html"></a>
+      <a href="370-lazy-load-images.html"></a>
+      <a href="380-responsive-breakpoints.html"></a>
+      <a href="390-autoheight.html"></a>
+      <a href="400-zoom.html"></a>
+      <a href="410-virtual-slides.html">Вот он</a>
+      <a href="420-custom-plugin.html"></a>
+      <a href="430-slideable-menu.html"></a>
+  </div>
+    
+    <p><a href="P/301-thumbs-gallery.html">Первый раочий вариант </a></p>
+
+    <div class="swiper-container">
+        <div class="swiper-scrollbar"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">Slide 1</div>
+            <div class="swiper-slide">Slide 2</div>
+            <div class="swiper-slide">Slide 3</div>
+            <div class="swiper-slide">Slide 4</div>
+            <div class="swiper-slide">Slide 5</div>
+            <div class="swiper-slide">Slide 6</div>
+            <div class="swiper-slide">Slide 7</div>
+            <div class="swiper-slide">Slide 8</div>
+            <div class="swiper-slide">Slide 9</div>
+            <div class="swiper-slide">Slide 10</div>
+        </div>
+        <div class="swiper-pagination"></div>
+    </div>
+    <style>
+    body, html {
+        padding: 0;
+        margin: 0;
+        position: relative;
+        height: 100%;
+    }
+    .swiper-container {
+        width: 100%;
+        height: 300px;
+        margin: 50px auto;
+    }
+    .swiper-slide {
+        background: #f1f1f1;
+        color:#000;
+        text-align: center;
+        line-height: 300px;
+    }
+    </style>
+    <script src="../dist/js/swiper.min.js"></script>
+    <script>
+        var swiper = new Swiper({
+            el: '.swiper-container',
+            initialSlide: 2,
+            spaceBetween: 50,
+            slidesPerView: 2,
+            centeredSlides: true,
+            slideToClickedSlide: true,
+            grabCursor: true,
+            scrollbar: {
+              el: '.swiper-scrollbar',
+            },
+            mousewheel: {
+              enabled: true,
+            },
+            keyboard: {
+              enabled: true,
+            },
+            pagination: {
+              el: '.swiper-pagination',
+            },
+            navigation: {
+              nextEl: '.swiper-button-next',
+              prevEl: '.swiper-button-prev',
+            },
+        });
+    </script>
+</body>
+</html>
